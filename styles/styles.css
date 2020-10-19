@@ -1,4 +1,43 @@
-section.main-content img {
-    max-width: 100%;
-    height: auto;
+.search-and-image-content {
+    padding-top: 131px;
+    padding-bottom: 60px;
+    overflow: visible;
+    background-image: url(/assets/1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.search-and-image-content h1{
+    color: aliceblue;
+}
+
+div.from-date, div.back-date{
+    display: inline;
+}
+
+.i-calendar {
+    background-image: url(/assets/icons/calendar.svg);
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.i-center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
