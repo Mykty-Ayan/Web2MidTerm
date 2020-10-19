@@ -1,13 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     background-color:  hsla(215, 50%, 23%, 0.8);
+    
 }
 
 header {
@@ -75,11 +76,13 @@ div.from-date, div.back-date{
 }
 
 .nav__links li {
-    display: inline-block;
-    padding: 0px, 40px;
+    margin: auto;
+    display: inline-flex;
+    padding: 0px 15px;
 }
 
 .nav__links li a {
+    color: #ffffff;
     transition: all 0.3s ease 0s;
 }
 
