@@ -1,18 +1,40 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color:  hsla(215, 50%, 23%, 0.8);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: static;
+}
+
+nav > li, a, button {
+    text-decoration: none;
+}
+
+
+
 .search-and-image-content {
-    padding-top: 131px;
+    padding-top: 60px;
     padding-bottom: 60px;
     overflow: visible;
     background-image: url(/assets/1.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 600px;
+    height: 520px;
     display: flex;
     align-items: center;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .search-and-image-content h1{
@@ -41,3 +63,41 @@ div.from-date, div.back-date{
     bottom: 0;
     right: 0;
 }
+
+.logo {
+    cursor: pointer;
+    height: 30px;
+    background-size: contain;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px, 40px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #ffffff;
+}
+
+button.sign-in {
+    padding: 7px 13px;
+    background-color: hsla(215, 50%, 23%, 0.3);
+    border-radius: 8px;
+    border-color: #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: hsla(215, 50%, 23%, 0.01);
+}
+
