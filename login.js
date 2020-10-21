@@ -2,9 +2,6 @@ $(function(){
     $name = $('#full-name');
     $nameerror = $('#nameerror');
 
-    $uid = $('#uid');
-    $uiderror = $('#uiderror');
-
     $email = $('#email');
     $emailerror = $('#emailerror');
 
@@ -15,23 +12,12 @@ $(function(){
 
     $error = 0;
     $nameerror.hide();
-    $uiderror.hide();
     $emailerror.hide();
 
     if(($nameval = $.trim($name.val())).length == 0)
     {
         $error = 1;
         $nameerror.show();
-    }
-
-    if(($uidval = $.trim($uid.val()).length == 0))
-    {
-        $error = 1;
-        $uiderror.show();
-    }
-    else
-    {
-        $uidval = $uidval.replace(/\s+/g, '');
     }
 
     if(($emailval = $.trim($email.val())).length == 0)
@@ -54,9 +40,8 @@ $(function(){
     if(!$error)
     {
         Cookies.set('name', $nameval);
-        Cookies.set('uid', $uidval);
 
-        location.href = 'profile.html';
+        location.href = 'index.html';
     }
 });
 });

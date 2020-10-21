@@ -10,7 +10,7 @@ body {
    
    
    .topbar {
-    background-image: url("https://abs.twimg.com/a/1512226556/img/t1/lohp_streams_header_bg_v4.png");
+    background-color: rgb(83, 98, 235);
     background-size: 100% 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     height: 46px;
@@ -45,7 +45,7 @@ body {
    }
    
    #submit_button {
-    background-color: #1da1f2;
+    background-color: rgb(83, 98, 235);
     border: 1px solid #1da1f2;
     border-radius: 100px;
     box-shadow: none;
