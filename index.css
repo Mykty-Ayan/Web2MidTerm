@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+
+input {
+  border-radius: 5px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.upper {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+#plane {
+  font-size: 80px;
+  color: rgb(83, 98, 235);
+}
+.upper span {
+  font-size: 50px;
+  color: rgb(83, 98, 235);
+}
+
+.bookingForm .bookingForm__form {
+  background-color: #524c61;
+  padding: 20px;
+  border-radius: 10px;
+  width: 700px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+.bookingForm__form__row {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bookingForm__form__row__column {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.bookingForm__form__row__column__text {
+  margin-right: 15px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.bookingForm__form__row__column a {
+  color: white;
+  text-decoration: none;
+}
+
+.bookingForm__form__row__input {
+  width: 40%;
+}
+
+#arrow {
+  color: white;
+}
+
+.bookingForm__form__row span {
+  color: white;
+}
+
+.bookingForm__selector .bookingForm__form__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookingForm__form__row__column_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookingForm__form__row__column_1 span {
+  margin-bottom: 15px;
+}
+
+.bookingForm__selector {
+  margin-bottom: 25px;
+}
+
+.bookingForm__form__row-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bookingForm__form__row-button button {
+  background-color: rgb(83, 98, 235);
+  width: 120px;
+  height: 50px;
+  border-width: 0px;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.userInfo {
+  color: white;
+}
+
+.userInfo-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo-name__text {
+  margin-bottom: 15px;
+}
+
+.userInfo-name input {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.userInfo-privateNumber__input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.userInfo-gender__text {
+  margin-bottom: 10px;
+}
+
+.userInfo-gender__radio {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.userInfo-gender__radio span {
+  margin-right: 10px;
+}
+
+.userInfo-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo-email input {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  height: 20px;
+}

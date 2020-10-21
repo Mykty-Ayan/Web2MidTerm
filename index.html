@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <i id="plane" class="fas fa-plane"></i>
+        <span>Travel Gates</span>
+      </div>
+      <div class="bookingForm">
+        <form class="bookingForm__form" action="index.html" method="post">
+          <div class="bookingForm__form__row">
+            <div class="bookingForm__form__row__column">
+              <input type="radio" name="way" checked value="roundTrip"><span class="bookingForm__form__row__column__text">Круговой рейс</span>
+              <input type="radio" name="way" value="oneWayTrip"><span class="bookingForm__form__row__column__text">В одну сторону</span>
+              <input type="radio" name="way" value="multiSegment"><span class="bookingForm__form__row__column__text">Многосекционный</span>
+            </div>
+            <div class="bookingForm__form__row__column">
+              <a href="#">Поиск по карте</a>
+            </div>
+          </div>
+          <div class="bookingForm__form__row">
+              <input type="text" name="from" class="bookingForm__form__row__input" placeholder="Введите начальную точку.">
+              <i id="arrow" class="fas fa-arrows-alt-h"></i>
+              <input type="text" name="to" class="bookingForm__form__row__input" placeholder="Введите пункт назначения.">
+          </div>
+          <div class="bookingForm__selector">
+            <div class="bookingForm__form__row">
+              <div class="bookingForm__form__row__column_1">
+                <span>В тот день, когда ты уйдешь</span>
+                <input type="date" name="dateToGo" value="">
+              </div>
+              <div class="bookingForm__form__row__column_1">
+                <span>Грядущий день</span>
+                <input type="date" name="dateToCome" value="">
+              </div>
+              <div class="bookingForm__form__row__column_1">
+                <span>Рейтинг сидений</span>
+                <select class="" name="seatGrade">
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="userInfo">
+            <div class="userInfo-name">
+              <span class="userInfo-name__text">Имя</span>
+              <input type="text" name="userName" value="" placeholder="Введите свое имя.">
+            </div>
+            <div class="userInfo-privateNumber">
+              <span class="userInfo-privateNumber__text">Число резидентов</span>
+              <div class="userInfo-privateNumber__input">
+                <input type="number" name="privateNumber1" value="">
+                <!-- <span>-</span>
+                <input type="password" name="privateNumber2" value=""> -->
+              </div>
+            </div>
+            <div class="userInfo-gender">
+                <span class="userInfo-gender__text">Пол</span>
+                <div class="userInfo-gender__radio">
+                  <input type="radio" name="gender" value="Мужчина" checked><span>Мужчина</span>
+                  <input type="radio" name="gender" value="Женщина"><span>Женщина</span>
+                </div>
+            </div>
+            <div class="userInfo-email">
+                <span class="userInfo-email__text">Электронная почта</span>
+                <input type="email" name="userEmail" placeholder="example@mail.com..." value="">
+            </div>
+          </div>
+          <div class="bookingForm__form__row-button">
+              <button type="submit" name="button">Поиск билетов</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
